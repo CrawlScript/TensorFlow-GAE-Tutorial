@@ -124,7 +124,6 @@ tf_geometric自带了方便的负采样方法`negative_sampling`，在使用它�
 # 如上所述，训练测试分离时，我们将边转换为无向边
 undirected_train_edge_index, undirected_test_edge_index, _, _ = edge_train_test_split(
     edge_index=graph.edge_index,
-    num_nodes=graph.num_nodes,
     test_size=0.15
 )
 
