@@ -246,7 +246,7 @@ GAE的训练流程与普通的TensorFlow模型训练流程基本一致，定义�
 在链接预测任务中，这是非常容易混淆的问题。
 
 ```python
-optimizer = tf.train.AdamOptimizer(learning_rate=1e-2)
+optimizer = tf.keras.optimizers.Adam(learning_rate=1e-2)(learning_rate=1e-2)
 
 for step in range(1000):
     with tf.GradientTape() as tape:
